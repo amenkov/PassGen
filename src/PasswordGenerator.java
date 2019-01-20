@@ -37,7 +37,7 @@ public class PasswordGenerator {
             public void actionPerformed(ActionEvent e) {
                 String charset = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvxyz1234567890!#$&%+<>()*/:;?@{}";
                 try {
-                    Integer length = Integer.parseInt(comboBox1.getSelectedItem().toString());
+                    int length = Integer.parseInt(comboBox1.getSelectedItem().toString());
                     if (length == 0 || (length < 6 || length > 21)) {
                         throw new Exception();
                     }
